@@ -1,0 +1,100 @@
+<html>
+
+    <head>
+        <title>SóCinema</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo_menu.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo_corpo.css"/>
+        <link rel="stylesheet" type="text/css" href="css/estilo_formulario.css"/>
+        <script src="js/validacao.js"></script>
+        <link rel="icon" href="img/favicon.png"/>
+    </head>
+
+    <body>
+        
+        <div id="header">
+            <div id="logo_bar">
+                <a href="index.html">SóCinema</a>
+            </div>
+            <input type="checkbox" id="btt_menu"/>
+            <label for="btt_menu">&#9776;</label>
+
+            <div id="nav">
+                <ul>
+                    <li>
+                        <a href="romance.html">Romance</a>
+                    </li>
+
+                    <li>
+                        <a href="comedia.html">Comédia</a>
+                    </li>
+
+                    <li>
+                        <a href="terror.html">Terror</a>
+                    </li>
+
+                    <li>
+                        <a href="drama.html">Drama</a>
+                    </li>
+
+                    <li>
+                        <a href="">Comentários</a>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+        
+        <div id="main">
+
+            <div id="form_box">
+                
+                <form>
+                
+                    <div class="f_line">
+                        <span>
+                            <label>E-mail</label>
+                            <input type="text" id="email" placeholder="Insira o seu e-mail aqui" required>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label>Nome</label>
+                            <input type="text" id="name" placeholder="Insira o seu nome aqui" required>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <label>Comentário/Sugestão</label>
+                            <input type="text" id="comment" placeholder="Insira aqui o seu comentário ou a sua sugestão sobre o site" required>
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <input type="checkbox" id="cine">
+                            Aceito receber atualizações sobre lançamentos no cinema
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <input type="checkbox" id="stream">
+                            Aceito receber atualizações sobre lançamentos nas plataformas de streaming
+                        </span>
+                    </div>
+
+                    <div class="f_line">
+                        <span>
+                            <input type="submit" onclick="validacao()" value="Enviar" id="btt_form">
+                        </span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        
+    </body>
+</html>
